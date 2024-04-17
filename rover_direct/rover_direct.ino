@@ -51,7 +51,7 @@ void loop() {
   Serial.print(ch[0]);
   Serial.print(",");
   Serial.print(ch[1]);
-  Serial.print(",");
+  Serial.println(",");
   // Serial.println(ch[2]);
 
 
@@ -67,15 +67,15 @@ void loop() {
 
   analogWrite(velocidad, aceleracion);
 
-//  servito(0, 205, 435, 0);
+//  servito(0, 205, 435, 40);
 //  servito(1, 205, 435, 0);
 //  servito(2, 435, 205, 7 - 0);
 //  servito(3, 435, 205, 0);
 
   llanta1.write(servito2(50,130,0));
-  llanta2.write(servito2(50,130,0));
+  llanta2.write(servito2(130,50,0));  //TT
   llanta3.write(servito2(50,130,0));
-  llanta4.write(servito2(50,130,0));
+  llanta4.write(servito2(130,50,0));  //tt
 
 
 
